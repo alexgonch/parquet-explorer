@@ -2,7 +2,7 @@
     "name": "parquet-explorer",
     "displayName": "Parquet Explorer",
     "description": "Explore Parquet files with SQL. Powered by DuckDB",
-    "version": "1.2.1-alex1",
+    "version": "1.2.1-alex2",
     "publisher": "AdamViola",
     "icon": "icon.png",
     "private": true,
@@ -44,6 +44,11 @@
                     "default": 100,
                     "minimum": 30,
                     "markdownDescription": "Number of query results to fetch per request."
+                },
+                "parquet-explorer.autoQuery": {
+                    "type": "boolean",
+                    "default": true,
+                    "markdownDescription": "Automatically dispatch queries as the input changes. If false, queries are only dispatched on Ctrl + Enter."
                 }
             }
         },
